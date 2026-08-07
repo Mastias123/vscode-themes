@@ -1,0 +1,123 @@
+{
+  "$schema": "vscode://schemas/color-theme",
+  "name": "Cozy Forest",
+  "type": "dark",
+
+  "colors": {
+    "editor.background": "#0A1C16",
+    "editor.foreground": "#D6C9A8",
+
+    "editorCursor.foreground": "#E98222",
+    "editorLineNumber.foreground": "#445F3C",
+    "editorLineNumber.activeForeground": "#DB872D",
+
+    "editor.selectionBackground": "#394E2D",
+    "editor.inactiveSelectionBackground": "#303E23",
+
+    "editor.lineHighlightBackground": "#13291D",
+
+    "activityBar.background": "#140803",
+    "activityBar.foreground": "#EEA143",
+    "activityBar.inactiveForeground": "#82763B",
+
+    "sideBar.background": "#13291D",
+    "sideBar.foreground": "#C7B98D",
+
+    "sideBarTitle.foreground": "#DB872D",
+
+    "statusBar.background": "#442006",
+    "statusBar.foreground": "#F0D7A0",
+
+    "titleBar.activeBackground": "#140803",
+    "titleBar.activeForeground": "#D6C9A8",
+
+    "panel.background": "#0A1C16",
+    "panel.border": "#394E2D",
+
+    "terminal.background": "#0A1C16",
+    "terminal.foreground": "#D6C9A8",
+
+    "focusBorder": "#DB872D",
+
+    "button.background": "#394E2D",
+    "button.foreground": "#FFFFFF",
+    "button.hoverBackground": "#445F3C",
+
+    "input.background": "#13291D",
+    "input.foreground": "#D6C9A8",
+    "input.border": "#394E2D",
+
+    "list.activeSelectionBackground": "#394E2D",
+    "list.activeSelectionForeground": "#FFFFFF",
+    "list.hoverBackground": "#13291D"
+  },
+
+  "tokenColors": [
+    {
+      "scope": [
+        "comment",
+        "punctuation.definition.comment"
+      ],
+      "settings": {
+        "foreground": "#788550",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": [
+        "string",
+        "string.quoted"
+      ],
+      "settings": {
+        "foreground": "#C58331"
+      }
+    },
+    {
+      "scope": [
+        "keyword",
+        "storage.type",
+        "storage.modifier"
+      ],
+      "settings": {
+        "foreground": "#E98222"
+      }
+    },
+    {
+      "scope": [
+        "entity.name.function",
+        "support.function"
+      ],
+      "settings": {
+        "foreground": "#EEA143"
+      }
+    },
+    {
+      "scope": [
+        "variable",
+        "identifier"
+      ],
+      "settings": {
+        "foreground": "#D6C9A8"
+      }
+    },
+    {
+      "scope": [
+        "constant.numeric",
+        "constant.language"
+      ],
+      "settings": {
+        "foreground": "#DB872D"
+      }
+    },
+    {
+      "scope": [
+        "entity.name.type",
+        "entity.name.class",
+        "support.type"
+      ],
+      "settings": {
+        "foreground": "#829A61"
+      }
+    }
+  ]
+}

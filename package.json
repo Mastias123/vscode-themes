@@ -1,0 +1,22 @@
+{
+  "name": "cozy-forest-theme",
+  "displayName": "Cozy Forest",
+  "description": "A dark green and warm amber VS Code theme",
+  "version": "0.0.1",
+  "publisher": "mathias",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Cozy Forest",
+        "uiTheme": "vs-dark",
+        "path": "./themes/cozy-forest-color-theme.json"
+      }
+    ]
+  }
+}
