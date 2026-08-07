@@ -11,12 +11,12 @@
     "Themes"
   ],
   "contributes": {
-    "themes": [
-      {
-        "label": "Cozy Forest",
-        "uiTheme": "vs-dark",
-        "path": "./themes/cozy-forest-color-theme.json"
-      }
-    ]
+  "themes": [
+    {
+      "label": "Cozy Forest",
+      "uiTheme": "vs-dark",
+      "path": "./themes/cozy-forest-theme.json"
+    }
+  ]
   }
 }
