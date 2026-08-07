@@ -2,7 +2,7 @@
 
 This extension contains two dark VS Code themes inspired by warm amber light, deep forest greens, and muted natural tones. Both are designed to keep the workbench calm while making code structure easy to scan.
 
-## Included themes
+## Included themes 
 
 | Theme | Character | Best for |
 | --- | --- | --- |
