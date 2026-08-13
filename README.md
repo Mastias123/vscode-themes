@@ -38,6 +38,27 @@ If the `code` command is unavailable, use **Extensions: Install from VSIX** from
 
 For a download that does not require packaging, maintainers can attach the generated `.vsix` file to a GitHub Release. Marketplace publishing is the option that makes the themes searchable and installable directly from VS Code's Extensions view.
 
+## Update a local installation
+
+A theme installed from a `.vsix` is a copy of the extension, so later changes in this repository do not appear in normal VS Code automatically. After changing or adding a theme:
+
+1. Increase the `version` in `package.json` (for example, `0.0.1` to `0.0.2`).
+2. Build a new package:
+
+   ```bash
+   npx @vscode/vsce package
+   ```
+
+3. Install the newly generated VSIX, using its new versioned filename:
+
+   ```bash
+   code --install-extension cozy-forest-theme-0.0.2.vsix
+   ```
+
+4. Run **Developer: Reload Window** if VS Code does not refresh the theme immediately.
+
+Use the Extension Development Host workflow above for fast visual iteration; package and reinstall only when you want to update your normal VS Code installation.
+
 ## Repository layout
 
 ```text
