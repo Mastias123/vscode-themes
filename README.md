@@ -1,6 +1,6 @@
 # Cozy Forest Themes
 
-This extension contains two dark VS Code themes inspired by warm amber light, deep forest greens, and muted natural tones. Both are designed to keep the workbench calm while making code structure easy to scan.
+This extension contains three dark VS Code themes inspired by warm amber light, deep forest greens, muted natural tones, and a high-contrast midnight spectrum. They are designed to keep the workbench calm while making code structure easy to scan.
 
 ## Included themes 
 
@@ -8,15 +8,16 @@ This extension contains two dark VS Code themes inspired by warm amber light, de
 | --- | --- | --- |
 | **Cozy Forest** | Deep pine-green editor with restrained amber highlights | A cooler, quieter everyday coding environment |
 | **Ember Canopy** | Rich ember and dark-brown surfaces with honey-gold accents | A warmer, more atmospheric version inspired by the reference artwork |
+| **Midnight Spectrum** | Blue-charcoal editor with orange, green, blue, and rainbow symbol accents | A vibrant, high-contrast dark environment |
 
-Both themes use sage for types and properties, gold for functions, warm amber for active or focused elements, and muted teal for secondary contrast.
+Cozy Forest and Ember Canopy use sage for types and properties, gold for functions, warm amber for active or focused elements, and muted teal for secondary contrast. Midnight Spectrum uses orange keywords, green strings and types, blue functions, and six-color bracket pairs.
 
 ## Install locally
 
 1. Open this folder in VS Code.
 2. Press `F5` to open an **Extension Development Host** window.
 3. In that new window, open the Command Palette with `Ctrl+Shift+P` (`Cmd+Shift+P` on macOS).
-4. Run **Preferences: Color Theme** and choose **Cozy Forest** or **Ember Canopy**.
+4. Run **Preferences: Color Theme** and choose **Cozy Forest**, **Ember Canopy**, or **Midnight Spectrum**.
 
 Changes to the theme file are normally picked up after running **Developer: Reload Window** in the Extension Development Host.
 
@@ -27,13 +28,14 @@ Changes to the theme file are normally picked up after running **Developer: Relo
 ├── package.json                     # Extension metadata and theme registration
 ├── themes/
 │   ├── cozy-forest-theme.json       # The cooler pine-green theme
-│   └── ember-canopy-theme.json      # The warmer ember-brown theme
+│   ├── ember-canopy-theme.json      # The warmer ember-brown theme
+│   └── midnight-spectrum-theme.json # The blue-charcoal spectrum theme
 └── README.md
 ```
 
 ## Editing the theme
 
-The themes live in [`themes/cozy-forest-theme.json`](themes/cozy-forest-theme.json) and [`themes/ember-canopy-theme.json`](themes/ember-canopy-theme.json). Keep their syntax roles aligned, while allowing their UI-surface colours to express each theme's character.
+The themes live in [`themes/cozy-forest-theme.json`](themes/cozy-forest-theme.json), [`themes/ember-canopy-theme.json`](themes/ember-canopy-theme.json), and [`themes/midnight-spectrum-theme.json`](themes/midnight-spectrum-theme.json). Keep their syntax roles aligned, while allowing their UI-surface colours to express each theme's character.
 
 - `colors` controls the VS Code interface: editor, tabs, sidebar, terminal, lists, buttons, Git decorations, and diagnostics.
 - `tokenColors` controls TextMate syntax scopes. It is the compatibility layer used by every language grammar.
@@ -73,7 +75,7 @@ Prefer precise scopes over broad ones. For example, use `variable.parameter` for
 The theme file must remain valid JSON. From the repository root:
 
 ```bash
-node -e "for (const f of ['themes/cozy-forest-theme.json', 'themes/ember-canopy-theme.json']) JSON.parse(require('fs').readFileSync(f)); console.log('Theme JSON is valid')"
+node -e "for (const f of ['themes/cozy-forest-theme.json', 'themes/ember-canopy-theme.json', 'themes/midnight-spectrum-theme.json']) JSON.parse(require('fs').readFileSync(f)); console.log('Theme JSON is valid')"
 ```
 
 Before publishing, test at least one file from each supported family: JavaScript/TypeScript, HTML/JSX, CSS/SCSS, JSON, Markdown, and a language with semantic highlighting such as Java or Python.

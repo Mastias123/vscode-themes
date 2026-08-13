@@ -1,7 +1,7 @@
 {
   "name": "cozy-forest-theme",
   "displayName": "Cozy Forest",
-  "description": "Dark forest and warm ember VS Code themes",
+  "description": "Dark forest, warm ember, and midnight spectrum VS Code themes",
   "version": "0.0.1",
   "publisher": "mathias",
   "engines": {
@@ -21,6 +21,11 @@
       "label": "Ember Canopy",
       "uiTheme": "vs-dark",
       "path": "./themes/ember-canopy-theme.json"
+    },
+    {
+      "label": "Midnight Spectrum",
+      "uiTheme": "vs-dark",
+      "path": "./themes/midnight-spectrum-theme.json"
     }
   ]
   }
