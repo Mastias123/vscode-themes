@@ -3,7 +3,22 @@
   "displayName": "Cozy Forest",
   "description": "Dark forest, warm ember, and midnight spectrum VS Code themes",
   "version": "0.0.1",
-  "publisher": "mathias",
+  "publisher": "mastias123",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mastias123/vscode-theme.git"
+  },
+  "homepage": "https://github.com/Mastias123/vscode-theme#readme",
+  "bugs": {
+    "url": "https://github.com/Mastias123/vscode-theme/issues"
+  },
+  "keywords": [
+    "theme",
+    "color theme",
+    "dark theme",
+    "cozy forest",
+    "midnight spectrum"
+  ],
   "engines": {
     "vscode": "^1.90.0"
   },

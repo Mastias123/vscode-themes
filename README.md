@@ -12,7 +12,7 @@ This extension contains three dark VS Code themes inspired by warm amber light, 
 
 Cozy Forest and Ember Canopy use sage for types and properties, gold for functions, warm amber for active or focused elements, and muted teal for secondary contrast. Midnight Spectrum uses orange keywords, green strings and types, blue functions, and six-color bracket pairs.
 
-## Install locally
+## Develop locally
 
 1. Open this folder in VS Code.
 2. Press `F5` to open an **Extension Development Host** window.
@@ -20,6 +20,23 @@ Cozy Forest and Ember Canopy use sage for types and properties, gold for functio
 4. Run **Preferences: Color Theme** and choose **Cozy Forest**, **Ember Canopy**, or **Midnight Spectrum**.
 
 Changes to the theme file are normally picked up after running **Developer: Reload Window** in the Extension Development Host.
+
+## Install from this repository
+
+Cloning this repository gives you the theme source. To install the themes in your normal VS Code instance, package that source into a VSIX file first:
+
+```bash
+git clone https://github.com/Mastias123/vscode-theme.git
+cd vscode-theme
+npx @vscode/vsce package
+code --install-extension cozy-forest-theme-0.0.1.vsix
+```
+
+`npx` downloads and runs the VS Code extension packager without a global installation. The generated `.vsix` is the installable extension archive; its name changes when the `name` or `version` in `package.json` changes.
+
+If the `code` command is unavailable, use **Extensions: Install from VSIX** from the Command Palette and choose the generated `.vsix` file. After installation, use **Preferences: Color Theme** to select a theme.
+
+For a download that does not require packaging, maintainers can attach the generated `.vsix` file to a GitHub Release. Marketplace publishing is the option that makes the themes searchable and installable directly from VS Code's Extensions view.
 
 ## Repository layout
 

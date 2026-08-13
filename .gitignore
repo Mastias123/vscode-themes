@@ -1,0 +1,2 @@
+# Generated VS Code extension packages; recreate them with `vsce package`.
+*.vsix
