@@ -209,7 +209,7 @@
     {
       "name": "Numbers and constants",
       "scope": ["constant.numeric", "constant.language", "constant.character", "constant.other"],
-      "settings": { "foreground": "#FCD34D" }
+      "settings": { "foreground": "#EF6B7B" }
     },
     {
       "name": "Functions and calls",
@@ -295,7 +295,7 @@
     "keyword": "#F6AD55",
     "modifier": "#FB923C",
     "string": "#86EFAC",
-    "number": "#FCD34D",
+    "number": "#EF6B7B",
     "regexp": "#5EEAD4",
     "operator": "#C4B5FD",
     "comment": { "foreground": "#6F849C", "italic": true },
